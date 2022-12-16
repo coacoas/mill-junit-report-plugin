@@ -1,8 +1,10 @@
 package net.coacoas.mill
 
+import mainargs.ArgReader
 import mill._
 import mill.api.Ctx
 import mill.define._
+import mill.eval.Evaluator
 import mill.main.EvaluatorScopt
 import mill.scalalib._
 import os.Path
@@ -12,14 +14,6 @@ import scala.collection.immutable.AbstractSeq
 import scala.collection.mutable.ArrayBuffer
 import scala.util.Try
 import scala.xml._
-import mainargs.ArgReader
-
-object OtherReport extends ExternalModule {
-
-  override def millDiscover: Discover[OtherReport.type] = Discover[OtherReport.type]
-
-  def a() = T.command { println("Other report"); 2 }
-}
 
 object JUnitReport extends ExternalModule {
   implicit def millScoptEvaluatorReads[Evaluator] = new EvaluatorScopt()

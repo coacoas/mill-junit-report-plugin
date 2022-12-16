@@ -9,7 +9,4 @@ class OtherTest extends munit.FunSuite {
     munit.Assertions.assert(1 + 1 == 2, "Addition works")
   }
 
-  test("Can instantiate") {
-    println(JUnitReport.millDiscover.value)
-  }
 }
