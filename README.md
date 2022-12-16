@@ -1,3 +1,5 @@
+# THIS IS STILL A WORK IN PROGRESS
+
 # Generate JUnit XML reports from Mill's test output.
 
 Many CI/CD servers already support reading JUnit XML reports and integrate well with code-review and merge-requests.
